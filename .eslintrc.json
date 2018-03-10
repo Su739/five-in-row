@@ -2,6 +2,7 @@
     "extends": "airbnb",
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/require-default-props": [0]
+        "react/require-default-props": [0],
+        "react/sort-comp": [1, {"order": ["propTypes", "everything-else", "render"]}]
       }
 }

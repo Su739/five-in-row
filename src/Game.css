@@ -2,15 +2,87 @@
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
 }
 .board-container {
-  margin: auto;
+  margin: 0 auto;
+}
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.step-list {
+  width: 200px;
+  height:6em;
+  margin: 1em auto;
+  overflow: auto;
+  padding: 0;
+  border: 1px solid #999;
+}
+.step-list li {
+  list-style:none;
+}
+.board-controller {
+  padding: 1em;
+  clear: both;
+}
+
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+    margin: auto;
+  }
+  .step-list {
+    width:150px;
+    height:250px;
+    float: left;
+    margin: 0 15px auto 145px;
+  }
+  .board-container {
+    float: left;
+  }
+  .board-container:after {
+    clear: both;
+  }
+}
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+    margin: auto;
+  }
+  .step-list {
+    width:150px;
+    height:250px;
+    float: left;
+    margin: 0 15px auto 250px;
+  }
+  .board-container {
+    float: left;
+  }
+  .board-container:after {
+    clear: both;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+    margin: auto;
+  }
+  .step-list {
+    width:150px;
+    height:250px;
+    float: left;
+    margin: 0 15px auto 200px;
+  }
+  .board-container {
+    float: left;
+  }
+  .board-container:after {
+    clear: both;
+  }
 }
