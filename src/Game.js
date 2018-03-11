@@ -267,9 +267,11 @@ class Game extends Component {
     });
   }
   render() {
+    // 生成对局记录表
     const stepList = this.state.stepList.map((item, index) => (
       <li key={`k-${item.position}`}>{`#-${index}:  ${item.player} at ${item.position}`}</li>
     ));
+    // 判断是否胜负已分来决定渲染
     const winner = calculateWinner(this.state.squares, this.state.boardNum);
     const guide = (
       <div>
